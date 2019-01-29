@@ -1,0 +1,81 @@
+body{
+	background-color: #F2F2F2;
+}
+.main{
+	margin: 0 auto;
+    margin-top: 17vw;
+	width: 90vw;
+}
+.tabbtn{
+	width: 100vw;/*相对于视口的宽度，视口被均分为100单位的vw*/
+	background-color: #35A1CF;
+    top: 0;
+    left: 0;
+    padding-left: 6.5vw;
+    position: fixed;/*不论窗口滚动与否，元素都会留在那个位置。*/
+    box-shadow: 0 0.5vw 2vw rgba(155,155,155,0.4);
+    z-index: 999;
+}
+.tabbtn li{
+	display: inline-block;/*一行显示*/
+	color: white;
+	font-size: 4.5vw;
+	width: 27vw;
+	height: 13vw;
+	text-align: center;
+	padding-top: 3vw;
+	margin-right: 3vw;
+}
+.inner li{
+	display: none;
+}
+.title {
+	display: inline-block;
+	border-bottom: 1vw #E2E2E2 solid;/*下边框样式*/
+	color: #A9A9A9;
+	font-size: 4.6vw;
+	font-weight: 300;/*字体粗细*/
+	letter-spacing: 1vw;
+	margin:0 0 4vw 1.5vw;	
+}
+.page{
+	display: inline-block;
+	width: 27vw;
+	height: 30vw;
+	margin:0 1.5vw 0 1.5vw;
+	vertical-align: top;
+	padding: 3vw 1vw 1vw 1vw;
+	margin-bottom: 3vw;/*下边框边距*/
+	background-color: white;
+}
+
+.img{
+	width: 20vw;
+	height: 21vw;
+	margin: 0 auto;
+	padding-bottom: 1vw;
+	border-bottom: 1px #E7E7E7 solid;
+}
+.name{
+	width: 27vw;
+	height: 5vw;
+	margin: 0 auto;
+	color: #808080;
+	text-align:center;
+	font-size: 7px;
+	/*-webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.60);*/
+     overflow:hidden;
+    white-space:nowrap;/*段落文本不换行*/
+	text-overflow:ellipsis;/*当对象内文本溢出时显示省略标记（...）。*/
+	-o-text-overflow:ellipsis;
+	-webkit-text-overflow:ellipsis;
+	-moz-text-overflow:ellipsis;
+	z-index: -111;/*出现在图片后*/
+}
+ul.inner li.active{
+	 display: block;
+}
+ul.tabbtn li.active{
+	border-bottom: 1.5vw white solid;
+}
